@@ -10,7 +10,7 @@ public class deleteNode {
     }
     
     public static void main(String[] args) {
- deleteNode deleteNoden=new deleteNode();
+ deleteNode deleteNode=new deleteNode();
 
     }
 }
