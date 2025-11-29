@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLinkedList;
 
 public class deleteNode {
     public class Node{

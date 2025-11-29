@@ -1,4 +1,4 @@
-package LinkedList;
+package LinkedList.SinglyLinkedList;
 
 public class nthNodeFromEnd {
     public static class Node {

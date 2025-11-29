@@ -1,6 +1,4 @@
-package LinkedList;
-
-import java.util.*;
+package LinkedList.SinglyLinkedList;
 
 public class basicll {
 
