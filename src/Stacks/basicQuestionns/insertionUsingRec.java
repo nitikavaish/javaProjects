@@ -35,7 +35,7 @@ public class insertionUsingRec {
     }
 
     public static void reverseStack(Stack<Integer> st) {
-        if (st.size() <= 0) {
+        if (st.size() <= 1) {
             return;
         }
         // top element ko nikal do
@@ -94,13 +94,13 @@ public class insertionUsingRec {
 //        insertAT(st, idx, val);
 //        System.out.println("After inserting ");
 //        System.out.println(st);
-//        System.out.println("before reverse \n" + st);
-//        reverseStack(st);
-//        System.out.println(" print reverse stack \n" + st);
-        System.out.println("before removing \n" + st);
-        removeAt(st, 2);
-        //removeAtBottom(st);
-        System.out.println("after removing \n" + st);
+        System.out.println("before reverse \n" + st);
+        reverseStack(st);
+        System.out.println(" print reverse stack \n" + st);
+//        System.out.println("before removing \n" + st);
+//        removeAt(st, 2);
+//        //removeAtBottom(st);
+//        System.out.println("after removing \n" + st);
 
 
     }
