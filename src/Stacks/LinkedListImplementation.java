@@ -11,7 +11,7 @@ public class LinkedListImplementation {
         }
     }
 
-    public static class LLStack { // USER defined data structue
+    public static class LLStack { // USER defined data structure
         private Node head = null;
 
         private int size = 0;

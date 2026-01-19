@@ -2,30 +2,34 @@ package Stacks.InterviewQuestions;
 
 import java.util.*;
 
-public class balenceBrackets {
-    // check whether a given bracket is balanced or not
-    public static boolean checkBalence(String s) {
+public class makeBalance {
+    public static int removeExtra(String s) {
         Stack<Character> st = new Stack<>();
+        int ex=0;
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
                 st.push('(');
             } else {
                 if (st.isEmpty()) {
-                    return false;
+                    ex++;
+                }else{
+                    st.pop();
                 }
-                st.pop();
+
             }
         }
-        if (st.isEmpty()) {
-            return true;
+        if (!st.isEmpty()) {
+            ex=ex+st.size();
+            return ex;
         }
-        return false;
+        return ex;
+
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
-        boolean check = checkBalence(s);
-        System.out.println(check);
+        int ex = removeExtra(s);
+        System.out.println(ex);
     }
 }
