@@ -1,12 +1,11 @@
 package Stacks;
 
-import java.util.Stack;
+import java.util.*;
 
-public class postfix_to_prefix {
+public class postfix_to_Infix {
     public static void main(String[] args) {
-
-        String postfix = "953+4*6/-";
         Stack<String> val = new Stack<>();
+        String postfix = "953+4*6/-";
         int n = postfix.length();
         for (int i = 0; i < n; i++) {
             char ch = postfix.charAt(i);
@@ -17,9 +16,8 @@ public class postfix_to_prefix {
                 String v2 = val.pop();
                 String v1 = val.pop();
                 char o = ch;
-                String ans = o + v1 + v2;
+                String ans = "(" + v1 + o + v2 + ")";
                 val.push(ans);
-
             }
         }
         System.out.println(val.peek());
