@@ -27,10 +27,21 @@ public class Ashmal {
         }
     }
 
-    public static void main(String[] args)throws Exception {
+    public static void main(String[] args) throws Exception {
         FastScanner sc = new FastScanner(System.in);
         int t = sc.nextInt();
-        while(t-->0){
+        while (t-- > 0) {
+            int n = sc.nextInt();
+            String arr[] = new String[n];
+            for(int i=0;i<n;i++){
+                arr[i]=sc.next();
+            }
+           Arrays.sort(arr);
+            String ans="";
+            for(int i=0;i<n;i++){
+
+            }
+            System.out.println(ans);
 
         }
 
