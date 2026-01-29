@@ -4,7 +4,7 @@ import java.util.*;
 import codeforces.FastInput.*;
 public class prefixMax {
     public static void main(String[] args) throws Exception{
-        FastScanner sc = new FastScanner();
+        FastScanner sc = new FastScanner(System.in);
         int t = sc.nextInt();
         while (t-- > 0) {
             int n = sc.nextInt();

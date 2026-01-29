@@ -7,7 +7,7 @@ public class ArraysImplementation {
         int arr[] = new int[5];
         int f = 0;
         int r = 0;
-        int size=0;
+        int size = 0;
 
         void add(int n) {
             if (r == arr.length) {
@@ -28,7 +28,6 @@ public class ArraysImplementation {
             size--;
             return top;
         }
-
 
 
         void display() {
@@ -68,34 +67,32 @@ public class ArraysImplementation {
         q.add(4);
         q.add(5);
         q.display();
-        System.out.println("size : "+q.size);
+        System.out.println("size : " + q.size);
         q.remove();
         q.display();
-        System.out.println("size : "+q.size);
-        System.out.println("peek : "+q.peek());
-        System.out.println("isEmpty : "+q.isEmpty());
+        System.out.println("size : " + q.size);
+        System.out.println("peek : " + q.peek());
+        System.out.println("isEmpty : " + q.isEmpty());
         q.remove();
         q.display();
-        System.out.println("size : "+q.size);
-        System.out.println("peek : "+q.peek());
-        System.out.println("isEmpty : "+q.isEmpty());
+        System.out.println("size : " + q.size);
+        System.out.println("peek : " + q.peek());
+        System.out.println("isEmpty : " + q.isEmpty());
         q.remove();
         q.display();
-        System.out.println("size : "+q.size);
-        System.out.println("peek : "+q.peek());
-        System.out.println("isEmpty : "+q.isEmpty());
+        System.out.println("size : " + q.size);
+        System.out.println("peek : " + q.peek());
+        System.out.println("isEmpty : " + q.isEmpty());
         q.remove();
         q.display();
-        System.out.println("size : "+q.size);
-        System.out.println("peek : "+q.peek());
-        System.out.println("isEmpty : "+q.isEmpty());
+        System.out.println("size : " + q.size);
+        System.out.println("peek : " + q.peek());
+        System.out.println("isEmpty : " + q.isEmpty());
         q.remove();
         q.display();
-        System.out.println("size : "+q.size);
-        System.out.println("peek : "+q.peek());
-        System.out.println("isEmpty : "+q.isEmpty());
-
-
+        System.out.println("size : " + q.size);
+        System.out.println("peek : " + q.peek());
+        System.out.println("isEmpty : " + q.isEmpty());
 
 
     }

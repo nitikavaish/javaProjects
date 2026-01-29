@@ -7,38 +7,29 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 public class FastInput {
-    static class FastScanner {
-        private final byte[] buffer = new byte[1 << 16];
-        private int ptr = 0, len = 0;
+    public static class FastScanner {
+        BufferedReader br;
+        StringTokenizer st;
 
-        private int read() throws IOException {
-            if (ptr >= len) {
-                len = System.in.read(buffer);
-                ptr = 0;
-                if (len <= 0) return -1;
-            }
-            return buffer[ptr++];
+        FastScanner(InputStream in) {
+            br = new BufferedReader(new InputStreamReader(in));
+        }
+
+        String next() throws IOException {
+            while (st == null || !st.hasMoreTokens())
+                st = new StringTokenizer(br.readLine());
+            return st.nextToken();
         }
 
         int nextInt() throws IOException {
-            int c, sign = 1, val = 0;
-            do c = read(); while (c <= ' ');
-            if (c == '-') {
-                sign = -1;
-                c = read();
-            }
-            while (c > ' ') {
-                val = val * 10 + (c - '0');
-                c = read();
-            }
-            return val * sign;
+            return Integer.parseInt(next());
         }
     }
 
     static StringBuilder out = new StringBuilder();
 
     public static void main(String[] args) throws Exception {
-        FastScanner fs = new FastScanner();
+        FastScanner fs = new FastScanner(System.in);
 
         int t = fs.nextInt();
 

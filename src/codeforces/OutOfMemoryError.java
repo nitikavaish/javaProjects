@@ -50,8 +50,8 @@ public class OutOfMemoryError {
                 int reset = 0;
                 if (arr[b] > h) {
                     reset++;
-                }else{
-                    reset=0;
+                } else {
+                    reset = 0;
                 }
 
             }
