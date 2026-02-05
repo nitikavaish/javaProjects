@@ -1,4 +1,4 @@
-package Map.basic_questions;
+package Map.questions;
 
 import java.util.*;
 
@@ -33,5 +33,7 @@ public class findMostFrequentElement {
             }
         }
         System.out.println("\nmax frequent element is : " + ansKey + " and its frequency is : " + mx_freq);
+
+
     }
 }

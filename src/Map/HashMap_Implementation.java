@@ -119,10 +119,6 @@ public class HashMap_Implementation {
             }
         }
 
-        public static void display() {
-
-        }
-
 
     }
 
