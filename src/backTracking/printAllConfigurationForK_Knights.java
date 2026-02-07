@@ -1,7 +1,7 @@
 package backTracking;
 
 public class printAllConfigurationForK_Knights {
-    static int maxKnight = 0;
+
     static int confn = 0;
 
     public static boolean isSafe(char board[][], int row, int col) {
@@ -61,7 +61,7 @@ public class printAllConfigurationForK_Knights {
                 confn++;
                 System.out.println();
             }
-            maxKnight = Math.max(maxKnight, num);
+
             return;
 
         } else if (isSafe(board, row, col)) {
@@ -79,17 +79,16 @@ public class printAllConfigurationForK_Knights {
     }
 
     public static void main(String[] args) {
-        int n = 4;
+        int n = 2;
         char[][] board = new char[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
                 board[i][j] = '.';
             }
         }
-        int k = 8;
+        int k = 1;
         placeKnight(board, 0, 0, 0, k);
         System.out.println("number of configuration  " + confn);
-        System.out.println("max night in NxN board are : " + maxKnight);
 
 
     }
