@@ -1,7 +1,7 @@
 package backTracking;
 
 // knight tour configuration
-public class leetcode_2596 {
+public class leetcode_2596_knightTour {
     public static boolean checkKnightTour(int grid[][], int row, int col, int num) {
         int n = grid.length;
 
