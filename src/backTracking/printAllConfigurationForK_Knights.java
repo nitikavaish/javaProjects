@@ -89,7 +89,5 @@ public class printAllConfigurationForK_Knights {
         int k = 1;
         placeKnight(board, 0, 0, 0, k);
         System.out.println("number of configuration  " + confn);
-
-
     }
 }

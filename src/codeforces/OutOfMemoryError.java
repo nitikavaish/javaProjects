@@ -47,11 +47,9 @@ public class OutOfMemoryError {
                 int b = sc.nextInt() - 1;
                 int c = sc.nextInt();
                 arr[b] += c;
-                int reset = 0;
+
                 if (arr[b] > h) {
-                    reset++;
-                } else {
-                    reset = 0;
+
                 }
 
             }

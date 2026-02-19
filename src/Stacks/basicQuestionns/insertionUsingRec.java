@@ -96,7 +96,7 @@ public class insertionUsingRec {
 //        System.out.println(st);
         System.out.println("before reverse \n" + st);
         reverseStack(st);
-        System.out.println(" print reverse stack \n" + st);
+        System.out.println(" nthLevel reverse stack \n" + st);
 //        System.out.println("before removing \n" + st);
 //        removeAt(st, 2);
 //        //removeAtBottom(st);

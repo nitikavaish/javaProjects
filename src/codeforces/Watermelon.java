@@ -5,9 +5,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-import java.util.*;
 
-public class Ashmal {
+public class Watermelon {
     public static class FastScanner {
         BufferedReader br;
         StringTokenizer st;
@@ -27,28 +26,14 @@ public class Ashmal {
         }
     }
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws IOException {
         FastScanner sc = new FastScanner(System.in);
-        int t = sc.nextInt();
-        while (t-- > 0) {
-            int n = sc.nextInt();
-            String arr[] = new String[n];
-            for (int i = 0; i < n; i++) {
-                arr[i] = sc.next();
-            }
-            String ans = "";
-            for (int i = 0; i < n; i++) {
-                String front = arr[i] + ans;
-                String back = ans + arr[i];
-                if (front.compareTo(back) <= 0) {
-                    ans = front;
-                } else {
-                    ans = back;
-                }
-            }
-            System.out.println(ans);
+        int w = sc.nextInt();
+        if (w % 2 == 0) {
+            System.out.println("Yes");
+        } else {
+            System.out.println("No");
 
         }
-
     }
 }

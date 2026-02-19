@@ -31,7 +31,7 @@ public class basicsOfStacks {
         System.out.println("stack is empty : " + st.isEmpty());
 
         // peek function
-//        System.out.println(st.peek()); // sabse upar wala element print kr dega
+//        System.out.println(st.peek()); // sabse upar wala element nthLevel kr dega
 //        System.out.println(st);
 //        st.pop();  // sabse upar wala element delete kr dega
 //        System.out.println(st);

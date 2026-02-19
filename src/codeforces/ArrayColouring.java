@@ -8,7 +8,7 @@ import java.util.*;
 
 import static codeforces.FastInput.*;
 
-//import static codeforces.FastInput.out;
+
 
 public class ArrayColouring {
     public static class FastScanner {

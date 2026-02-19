@@ -50,7 +50,7 @@ public class LL {
 
     }
 
-    // print
+    // nthLevel
     public void printList() {
         if (head == null) {
             System.out.println("List is empty. ");

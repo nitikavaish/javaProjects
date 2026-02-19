@@ -3,7 +3,7 @@ package backTracking;
 public class placeMaxKnightsInNxNBoard {
     static int maxKnight = 0;
     static int maxNum = 5; // max number of knights ke configuration
-    // print karne ke liye
+    // nthLevel karne ke liye
     static int confn = 0;
 
     public static boolean isSafe(char board[][], int row, int col) {

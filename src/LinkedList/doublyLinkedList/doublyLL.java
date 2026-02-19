@@ -37,7 +37,7 @@ public class doublyLL {
             temp = temp.prev;
         }
         // now temp is at head
-        // print the list
+        // nthLevel the list
         while (temp != null) {
             System.out.print(temp.val + " ");
             temp = temp.next;
@@ -125,14 +125,14 @@ public class doublyLL {
         //displayRev(e);
         //displayByRandomNode(c);
         //Node newHead = insertAtHead(a, 35);
-        //display(newHead);
+        //preOrderDisplay(newHead);
         //insertAtTail(a, 30);
-        //display(newHead);
+        //preOrderDisplay(newHead);
         insertAt(a, 3, 50);
         display(a);
         Node newHead = deleteHead(a);
         //deleteAt(a,2);
-        //display(newHead);
+        //preOrderDisplay(newHead);
         deleteTail(a);
         display(a);
     }

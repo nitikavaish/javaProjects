@@ -31,21 +31,21 @@ public class StudentClass {
 //        System.out.println(s1.name);
 //        s1.setRno(46);
 //        System.out.println(s1.getRno());
-//        print(s1);
+//        nthLevel(s1);
 //        s1.name = "Mahi";
 //        change(s1);
-//        print(s1);
+//        nthLevel(s1);
         Student s1 = new Student("Nitika", 46, 94.2);
         System.out.println(s1.getNumOfStudents());
         Student s2 = new Student("Mahi", 20, 87.5);
         System.out.println(s2.getNumOfStudents());
-//        print(s1);
+//        nthLevel(s1);
 //        Student s2 = new Student();
 //        s2.name = "Mahi";
 //        s2.rno = 20;
 //        s2.per = 87.5;
 //        s2.schoolName="KPS";
-//        print(s2);
+//        nthLevel(s2);
 //        Student.numOfStudents=100;
         System.out.println(Student.getNumOfStudents());
 

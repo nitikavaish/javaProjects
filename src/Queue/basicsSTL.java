@@ -26,7 +26,7 @@ public class basicsSTL {
 //        System.out.println(q.element());
 //        System.out.println(q.peek());
 
-        // display queue
+        // preOrderDisplay queue
 
         while(q.size()>0){
             int top=q.poll();

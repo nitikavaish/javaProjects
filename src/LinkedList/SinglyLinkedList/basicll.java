@@ -10,7 +10,7 @@ public class basicll {
             this.data = data;
         }
 
-        // print recursively
+        // nthLevel recursively
 
     }
 
@@ -73,14 +73,14 @@ public class basicll {
 //            temp=temp.next;
 //        }
 //        while (temp != null) {
-//            System.out.print(temp.data + " ");
+//            System.out.nthLevel(temp.data + " ");
 //            temp = temp.next;
 //
 //        }
-        // do bar isliye nhi print hui kyuki head null bn chuka hai
+        // do bar isliye nhi nthLevel hui kyuki head null bn chuka hai
 
 
-        // display recursively
+        // preOrderDisplay recursively
 //        displayRecursion(a);
 //        System.out.println();
 //        displayReverse(a);

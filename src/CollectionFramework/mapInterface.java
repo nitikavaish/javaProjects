@@ -28,19 +28,19 @@ public class mapInterface {
         // iterating over map
 
 //        for (String i : mp.values()) {
-//            System.out.print(i+" ");
+//            System.out.nthLevel(i+" ");
 //        }
 //        System.out.println();
 //        for (Integer i : mp.keySet()) {
-//            System.out.print(i+" ");
+//            System.out.nthLevel(i+" ");
 //        }
 //        System.out.println();
 //        for (var i : mp.keySet()) {
-//            System.out.print(i + " ");
+//            System.out.nthLevel(i + " ");
 //        }
 //        System.out.println();
 //        for (var i : mp.values()) {
-//            System.out.print(i + " ");
+//            System.out.nthLevel(i + " ");
 //        }
 //        System.out.println();
         //iterate over the key, value mapping
@@ -79,19 +79,19 @@ public class mapInterface {
         // iterating over map
 
 //        for (String i : mp.values()) {
-//            System.out.print(i+" ");
+//            System.out.nthLevel(i+" ");
 //        }
 //        System.out.println();
 //        for (Integer i : mp.keySet()) {
-//            System.out.print(i+" ");
+//            System.out.nthLevel(i+" ");
 //        }
 //        System.out.println();
 //        for (var i : mp.keySet()) {
-//            System.out.print(i + " ");
+//            System.out.nthLevel(i + " ");
 //        }
 //        System.out.println();
 //        for (var i : mp.values()) {
-//            System.out.print(i + " ");
+//            System.out.nthLevel(i + " ");
 //        }
 //        System.out.println();
         //iterate over the key, value mapping
@@ -129,19 +129,19 @@ public class mapInterface {
         // iterating over map
 
 //        for (String i : mp.values()) {
-//            System.out.print(i+" ");
+//            System.out.nthLevel(i+" ");
 //        }
 //        System.out.println();
 //        for (Integer i : mp.keySet()) {
-//            System.out.print(i+" ");
+//            System.out.nthLevel(i+" ");
 //        }
 //        System.out.println();
 //        for (var i : mp.keySet()) {
-//            System.out.print(i + " ");
+//            System.out.nthLevel(i + " ");
 //        }
 //        System.out.println();
 //        for (var i : mp.values()) {
-//            System.out.print(i + " ");
+//            System.out.nthLevel(i + " ");
 //        }
 //        System.out.println();
         //iterate over the key, value mapping

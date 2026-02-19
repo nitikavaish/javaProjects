@@ -30,7 +30,7 @@ public class displayStack {
         st.push(6);
         System.out.println(st);
 
-        // display iterative
+        // preOrderDisplay iterative
 
 //        int n = st.size();
 //        int arr[] = new int[n];
@@ -38,16 +38,16 @@ public class displayStack {
 //            arr[i] = st.pop();
 //        }
 //        for (int i = 0; i < n; i++) {
-//            System.out.print(arr[i] + " ");
+//            System.out.nthLevel(arr[i] + " ");
 //            st.push(arr[i]);
 //        }
 //        System.out.println();
 //        System.out.println(st);
 
-        // display Recursively
-        System.out.println("display stack in reverse order ");
+        // preOrderDisplay Recursively
+        System.out.println("preOrderDisplay stack in reverse order ");
         displayRevRec(st);// pass by reference hota hai
-        System.out.println("\ndisplay stack in same order ");
+        System.out.println("\npreOrderDisplay stack in same order ");
         displayRec(st);
     }
 }

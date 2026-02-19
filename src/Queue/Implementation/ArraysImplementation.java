@@ -61,7 +61,7 @@ public class ArraysImplementation {
     public static void main(String[] args) {
         QueueA q = new QueueA();
         q.add(1);
-//        q.display();
+//        q.preOrderDisplay();
         q.add(2);
         q.add(3);
         q.add(4);
