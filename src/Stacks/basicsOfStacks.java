@@ -33,7 +33,7 @@ public class basicsOfStacks {
         // peek function
 //        System.out.println(st.peek()); // sabse upar wala element nthLevel kr dega
 //        System.out.println(st);
-//        st.pop();  // sabse upar wala element delete kr dega
+//        st.pop();  // sabse upar wala element deletionOfNodes kr dega
 //        System.out.println(st);
 //        int size=st.size();
 //         System.out.println( "size is : "+st.size());

@@ -16,10 +16,10 @@ public class basicsSTL {
         q.add(7);
 //        System.out.println(q);
 //        System.out.println(q.size());
-//        // delete
+//        // deletionOfNodes
 //        q.poll();
 //        System.out.println(q);
-//        // delete
+//        // deletionOfNodes
 //        q.remove();
 //        System.out.println(q);
 //        // access element

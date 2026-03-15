@@ -64,7 +64,7 @@ public class LL {
         System.out.println("null");
     }
 
-    // delete first
+    // deletionOfNodes first
     public void deleteFirst() {
         if (head == null) {
             System.out.println("This list is empty");
@@ -75,7 +75,7 @@ public class LL {
 
     }
 
-    // delete last
+    // deletionOfNodes last
     public void deleteLast() {
         if (head == null) {
             System.out.println("list is empty");
