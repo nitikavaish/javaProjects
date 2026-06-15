@@ -5,7 +5,7 @@ public class StudentClass {
 //        String name;
 //        int rno;
 //        double per;
-
+//
 //    }
 
     public static void print(Student x) {

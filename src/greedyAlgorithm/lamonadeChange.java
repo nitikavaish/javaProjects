@@ -1,8 +1,6 @@
 package greedyAlgorithm;
 
-import java.util.*;
-
-public class laminateChange {
+public class lamonadeChange {
     public static boolean check(int arr[]) {
         int five = 0, ten = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -28,7 +26,7 @@ public class laminateChange {
     }
 
     public static void main(String[] args) {
-        int arr[] = {5, 5, 10,10, 20};
+        int arr[] = {5, 5, 5, 10, 10, 20};
         System.out.println(check(arr));
 
     }
