@@ -1,4 +1,4 @@
-package Graphs;
+package Graphs.BFS;
 
 import java.util.*;
 
@@ -12,19 +12,6 @@ public class cycleDetection {
             this.a = a;
             this.b = b;
         }
-    }
-
-    public static boolean usingDFS(int st, int p, List<List<Integer>> adj, boolean[] isVis) {
-        isVis[st] = true;
-        for (int child : adj.get(st)) {
-            if (!isVis[child]) {
-                if (usingDFS(child, st, adj, isVis)) return true;
-            } else if (child != p) {
-                return true;
-            }
-        }
-        return false;
-
     }
 
     public static boolean usingBFS(int st, List<List<Integer>> adj, boolean[] isVis) {
@@ -56,12 +43,10 @@ public class cycleDetection {
         boolean[] visited = new boolean[adj.size()];
         for (int i = 0; i < adj.size(); i++) {
             if (!visited[i]) {
-//                if (usingBFS(i, adj, visited)) {
-//                    return true;
-//                }
-                if (usingDFS(i, -1, adj, visited)) {
+                if (usingBFS(i, adj, visited)) {
                     return true;
                 }
+
             }
         }
         return false;

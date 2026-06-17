@@ -2,7 +2,7 @@ package Graphs.BFS;
 
 import java.util.*;
 
-public class kyAndRooms {
+public class keyAndRooms {
     public static void bfs(int st, List<List<Integer>> rooms, boolean[] isVis) {
         Queue<Integer> q = new LinkedList<>();
         q.offer(st);
