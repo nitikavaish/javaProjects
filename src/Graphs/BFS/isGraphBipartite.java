@@ -14,9 +14,6 @@ public class isGraphBipartite {
             if (!ans) return ans;
             if (visited[i] == -1) {
                 usingBFS(i, graph, visited);
-                if (i - 1 >= 0) {
-                    int color = visited[i - 1];
-                }
 
             }
 
