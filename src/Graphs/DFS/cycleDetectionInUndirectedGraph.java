@@ -2,8 +2,7 @@ package Graphs.DFS;
 
 import java.util.*;
 
-
-public class cycleDetection {
+public class cycleDetectionInUndirectedGraph {
     static class Pair {
         int a;
         int b;
