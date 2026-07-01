@@ -4,21 +4,6 @@ import java.util.*;
 
 
 public class NetworkDelayTime {
-    public static class Pair implements Comparable<Pair> {
-        int node;
-        int time;
-
-        Pair(int node, int cost) {
-            this.node = node;
-            this.time = cost;
-        }
-
-        @Override
-        public int compareTo(Pair o) {
-            if (this.time == o.time) return this.node - o.node;
-            return this.time - o.time;
-        }
-    }
 
     public static int networkDelayTime(int[][] times, int n, int src) {
         int dist[] = new int[n + 1];

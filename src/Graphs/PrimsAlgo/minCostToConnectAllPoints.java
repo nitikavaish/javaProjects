@@ -31,7 +31,7 @@ public class minCostToConnectAllPoints {
         PriorityQueue<Triplet> pq = new PriorityQueue<>();
         pq.add(new Triplet(0, -1, 0));
         int sum = 0;
-        boolean[] visited = new boolean[points.length];
+        boolean[] visited = new boolean[n];
         while (pq.size() > 0) {
             Triplet t = pq.poll();
             int node = t.node;
