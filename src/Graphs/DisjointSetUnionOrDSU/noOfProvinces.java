@@ -49,7 +49,9 @@ public class noOfProvinces {
 
     public static int findLeader(int a) {
         if (parent[a] == a) return a;
-        else return findLeader(parent[a]);
+        int leader = findLeader(parent[a]);
+        parent[a] = leader;// this is called path compression
+        return leader;
     }
 
     public static void main(String[] args) {

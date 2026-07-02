@@ -5,10 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.*;
-
-import static codeforces.FastInput.*;
-
-
+import static codeforces.FastInput.out;
 
 public class ArrayColouring {
     public static class FastScanner {
