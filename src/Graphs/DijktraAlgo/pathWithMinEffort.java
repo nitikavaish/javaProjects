@@ -28,7 +28,7 @@ public class pathWithMinEffort {
         for (int i = 0; i < n; i++) {
             Arrays.fill(ans[i], Integer.MAX_VALUE);
         }
-//       for travel in four direction
+        //  for travel in four direction
         int[] r = {-1, 0, 1, 0};
         int[] c = {0, -1, 0, 1};
         minHeap.offer(new Triplet(0, 0, 0));
@@ -54,8 +54,6 @@ public class pathWithMinEffort {
             }
         }
         return ans[n - 1][m - 1];
-
-
     }
 
     public static void main(String[] args) {
