@@ -1,6 +1,4 @@
-package Dynamic_Programming.besics;
-
-import java.util.*;
+package Dynamic_Programming.Memoization_And_Tabulation;
 
 public class minCostToClimbingStairs {
     // method -> 1 (simple Recursion) --> it will give tle
