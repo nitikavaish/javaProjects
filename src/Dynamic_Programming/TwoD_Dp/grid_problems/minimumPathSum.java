@@ -1,4 +1,4 @@
-package Dynamic_Programming.TwoD_Dp;
+package Dynamic_Programming.TwoD_Dp.grid_problems;
 
 import java.util.*;
 

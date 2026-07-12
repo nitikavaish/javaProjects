@@ -1,0 +1,82 @@
+package Dynamic_Programming.TwoD_Dp.knapsack.zero_one_knapsack;
+
+import java.util.*;
+
+public class findMaxProfit {
+    // method ->1 recursion
+    /*
+    public static int profit(int i, int[] wt, int[] price, int c) {
+        if (i >= wt.length) return 0;
+        int skip = profit(i + 1, wt, price, c);
+        if (wt[i] > c) return skip;
+        int pick = price[i] + profit(i + 1, wt, price, c - wt[i]);
+        return Math.max(pick, skip);
+
+    }
+    public static int solution(int[] wt, int[] price, int c) {
+        int n = price.length;
+        // i = 0 to n-1 and c = c to 0
+        int[][] dp = new int[n][c + 1];
+        for (int[] rows : dp) {
+            Arrays.fill(rows, -1);
+        }
+        return profit(0, wt, price, c, dp);
+
+    }
+     */
+
+    // method -> using memoization
+/*
+    public static int profit(int i, int[] wt, int[] price, int c, int[][] dp) {
+        if (i >= wt.length) return 0;
+        if (dp[i][c] != -1) return dp[i][c];
+        int skip = profit(i + 1, wt, price, c, dp);
+        if (wt[i] > c) return dp[i][c] = skip;
+        int pick = price[i] + profit(i + 1, wt, price, c - wt[i], dp);
+        return dp[i][c] = Math.max(pick, skip);
+
+    }
+
+    public static int solution(int[] wt, int[] price, int c) {
+        int n = price.length;
+        // i = 0 to n-1 and c = c to 0
+        int[][] dp = new int[n][c + 1];
+        for (int[] rows : dp) {
+            Arrays.fill(rows, -1);
+        }
+        return profit(0, wt, price, c, dp);
+
+    }
+
+ */
+
+
+    // method -3 tabulation
+    public static int solution(int[] wt, int[] price, int cap) {
+        int n = price.length;
+        // i = 0 to n-1 and c = c to 0
+        int[][] dp = new int[n][cap + 1];
+        for (int i = 0; i < n; i++) {
+            for (int c = 0; c < cap + 1; c++) {
+                int skip = (i - 1 >= 0) ? dp[i - 1][c] : 0;
+                if (c - wt[i] < 0) dp[i][c] = skip;
+                else {
+                    int pick = price[i];
+                    pick += (i - 1 >= 0) ? dp[i - 1][c - wt[i]] : 0;
+                    dp[i][c] = Math.max(pick, skip);
+                }
+            }
+        }
+        return dp[n - 1][cap];
+
+    }
+
+
+    public static void main(String[] args) {
+        int[] price = {5, 3, 7, 16};
+        int[] wt = {1, 2, 8, 10};
+        int c = 9;
+        int n = price.length;
+        System.out.println(solution(wt, price, c));
+    }
+}

@@ -12,7 +12,7 @@ public class fibonacciSeries {
      */
 
     // method 2 - (Memoization+Recursion)
-
+/*
 
     public static int fibo(int n, int[] dp) {
         if (n <= 1) return n;
@@ -27,6 +27,7 @@ public class fibonacciSeries {
         return fibo(n, dp);
     }
 
+ */
 
     // method --> 3 (Tabulation)
 /*
@@ -40,8 +41,20 @@ public class fibonacciSeries {
         }
         return dp[n];
     }
+    */
 
- */
+    // method --> 4(Tabulation+space optimization)
+    public static int fib(int n) {
+        if (n <= 1) return n;
+        int dp[] = new int[3];
+        dp[0] = 0;
+        dp[1] = 1;
+        for (int i = 2; i <= n; i++) {
+            dp[2] = dp[1] + dp[0];
+        }
+        return dp[2];
+    }
+
 
     public static void main(String[] args) {
         int n = 2;
